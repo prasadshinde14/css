@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+  --brown: hsl(14, 45%, 36%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: "Outfit";
+}
+
+body {
+  background-color: var(--rose-50);
+  margin: 0;
+  font-family: "Outfit" sans-serif;
+}
+
+ul li,
+ol li {
+  margin-top: 10px;
+  padding-left: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid lightgrey;
+}
+
+.container {
+  background-color: var(--white);
+  font-family: "Outfit" sans-serif;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.wrapper {
+  padding: 1rem;
+}
+
+.header-section__title {
+  text-align: center;
+  color: hsl(24, 5%, 18%);
+}
+
+.header-section__detail {
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-section {
+  background-color: var(--rose-50);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.preparation-section__title {
+  color: var(--rose-800);
+}
+
+.preparation-section__list span,
+.ingredients-section__list--item span {
+  color: hsl(30, 10%, 34%);
+  font-weight: 700;
+}
+
+.preparation-section__list--item::marker,
+.ingredients-section__list--item::marker,
+.instructions-section__list--item::marker {
+  color: var(--brown);
+  font-weight: bold;
+}
+
+.ingredients-section__title,
+.instructions-section__title,
+.nutrition-section__title {
+  color: var(--brown);
+}
+
+.nutrition-section__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-section__table tr:not(tr:last-of-type) {
+  border-bottom: 1px solid lightgrey;
+  padding: 3px;
+}
+
+.nutrition-section__table--nutri {
+  padding: 8px;
+}
+
+.nutrition-section__table--nutri-value {
+  font-weight: bold;
+  color: var(--brown);
+  padding: 8px;
+}
+
+@media (min-width: 40rem) {
+  .container {
+    max-width: 600px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .image-container img {
+    border-radius: 8px;
+  }
+}
