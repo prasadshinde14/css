@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="image-container">
+        <picture>
+          <source
+            media="(min-width:650px)"
+            srcset="images/image-header-desktop.jpg"
+          />
+          <source
+            media="(min-width:465px)"
+            srcset="images/image-header-mobile.jpg"
+          />
+          <img src="images/image-header-mobile.jpg" alt="image" />
+        </picture>
+        <div class="accent-div"></div>
+        <!-- <img src="images/image-header-mobile.jpg" alt="bg-image" /> -->
+      </section>
+      <section class="main-section">
+        <h1 class="main-section__heading">
+          Get insights that help your business grow.
+        </h1>
+        <p class="main-section__desc">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <ul class="main-section__list">
+          <li class="main-section__list__item">
+            <div class="main-section__list__item--stat-heading">10k+</div>
+            <div class="main-section__list__item--stat">companies</div>
+          </li>
+          <li class="main-section__list__item">
+            <div class="main-section__list__item--stat-heading">314</div>
+            <div class="main-section__list__item--stat">templates</div>
+          </li>
+          <li class="main-section__list__item">
+            <div class="main-section__list__item--stat-heading">12M+</div>
+            <div class="main-section__list__item--stat">queries</div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
